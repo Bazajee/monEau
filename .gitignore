@@ -1,6 +1,6 @@
 # folder 
-build/node _modules
-build/script
+node _modules/
+script/
 # file 
 brouillon 
 
