@@ -1,5 +1,7 @@
 # folder 
 node_modules/
-script/
+static/script/
+static/css/
+
 # file 
 brouillon 
