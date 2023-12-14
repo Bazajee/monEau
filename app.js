@@ -9,7 +9,7 @@ const router = express.Router();
 
 app.set("view engine", "ejs");
 
-app.set('views', path.join("/Users/thomassales/DU/node_js/hubeau_express/static", 'views'));
+app.set('views', path.join("static/", 'views'));
 app.use(express.static('static'));
 
 app.use((express.urlencoded({extended:true})))
