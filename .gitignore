@@ -1,6 +1,5 @@
 # folder 
-node _modules/
+node_modules/
 script/
 # file 
 brouillon 
-
