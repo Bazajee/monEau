@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lieux : <%= year_list[indice].nom_commune %> ---- Année <%= year_list[indice].annee %> </h1>
+    <% for (const [_, object] of sample_list.entries()) { %>
+    <p><%= object.libelle_parametre %> : <%= object.resultat_numerique %> <%= object.libelle_unite %> | Seuil : <%= object.reference_qualite_parametre %> </p>
+    <p>Conformité : <%=object.conclusion_conformite_prelevement %></p>
+    <br>
+    <% } %>
+    
+</body>
+</html>

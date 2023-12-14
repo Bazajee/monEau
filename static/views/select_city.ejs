@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="/script/script.js"></script> 
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Code Postal selectionné : <%= form_data %></h1>
+
+        <% for ( const object of zip_objects) { %>
+        <article>            
+            <a href="/city_view/<%= object.code %>"><h3 name="city_name"> <%= object.nom %> </h3></a>
+            <p> Population :<%= object.population %> ---- Département : <%=object.codeDepartement %> </p>
+            <p name="city_code"> Code INSEE : <%= object.code %> </p>
+        </article>
+
+        <% } %>
+
+    
+    </body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> Test disponible :</h2>
+
+
+    <% for (const [indice, object] of year_list.entries()) { %>
+    <article>
+        <p><a href="/sample_view/<%= insee_code %>/<%= indice %>"><%= object.annee %></a> </p>
+
+    </article>
+    <% } %>   
+
+</body>
+</html>
